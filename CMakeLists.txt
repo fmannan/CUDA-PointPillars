@@ -58,8 +58,8 @@ if(${CMAKE_BUILD_TYPE} STREQUAL "Debug")
   set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS} -g -G --ptxas-options=-v)
 endif()
 
-set(TENSORRT_INCLUDE_DIRS /usr/include/aarch64-linux-gnu/)
-set(TENSORRT_LIBRARY_DIRS /usr/lib/aarch64-linux-gnu/)
+set(TENSORRT_INCLUDE_DIRS /usr/local/TensorRT-8.5.2.2/include/)
+set(TENSORRT_LIBRARY_DIRS /usr/local/TensorRT-8.5.2.2/lib/)
 
 include_directories(
     ${CUDA_INCLUDE_DIRS}
